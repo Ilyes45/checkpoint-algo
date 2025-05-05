@@ -1,0 +1,23 @@
+ALGORITHM checkpoint1
+VAR
+    ch : STRING := "ilyes moussa.";
+    count : INTEGER :=0;
+    nbmot : INTEGER :=1;
+    nbvoy : INTEGER :=0;
+BEGIN
+    FOR(int i:=0;i<ch.length();i++)Do
+        IF (ch[i] !=".") THEN
+            count++;
+        END_IF
+        IF (ch[i] ==" ") THEN
+            nbmot++;
+        END_IF
+        IF (ch[i] ==("o","i","y","e","a","u","x","O","I","Y","E","A","U","X")) THEN
+            nbvoy++;
+        END_IF
+    END_FOR
+        Write(count);
+        Write(nbmot);
+        Write(nbvoy);
+    
+END
